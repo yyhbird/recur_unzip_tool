@@ -129,26 +129,6 @@ pip install pyinstaller
 # 简单打包
 pyinstaller -F -w -i icon.ico smart_extractor.py
 
-# 完整打包（包含所有依赖）
-pyinstaller --onefile --windowed \
-    --hidden-import=tkinterdnd2 \
-    --hidden-import=PIL \
-    --icon=icon.ico \
-    --name="智能解压工具" \
-    smart_extractor.py
-```
-
-### 打包配置文件
-```python
-# build.spec 示例
-a = Analysis(
-    ['smart_extractor.py'],
-    hiddenimports=['tkinterdnd2', 'PIL', 'PIL._imaging'],
-    excludes=['pathlib'],
-    ...
-)
-```
-
 ## 🔍 技术细节
 
 ### 解压算法
