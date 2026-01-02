@@ -43,7 +43,7 @@
 #### 方法二：源码运行
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yourusername/smart-extractor.git
+[git clone https://github.com/yourusername/smart-extractor.git](https://github.com/yyhbird/recur_unzip_tool.git)
 cd smart-extractor
 
 # 2. 安装依赖
