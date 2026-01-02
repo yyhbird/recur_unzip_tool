@@ -43,30 +43,31 @@
 #### 方法二：源码运行
 ```bash
 # 1. 克隆项目
-[git clone https://github.com/yourusername/smart-extractor.git](https://github.com/yyhbird/recur_unzip_tool.git)
+git clone https://github.com/yyhbird/recur_unzip_tool.git
 cd smart-extractor
 
 # 2. 安装依赖
 pip install -r requirements.txt
 
 # 3. 运行程序
-python smart_extractor.py
+python recurUnzip.py
+cd smart-extractor
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 运行程序
+python recurUnzip.py
 ```
 
 #### 方法三：PyInstaller打包
 ```bash
 # 打包为单个EXE文件
-pyinstaller -F -w -i icon.ico smart_extractor.py
+pyinstaller -F -w -i icon.ico recurUnzip.py
 
 # 打包为文件夹（启动更快）
-pyinstaller -w -i icon.ico smart_extractor.py
+pyinstaller -w -i icon.ico recurUnzip.py
 ```
-
-### 系统要求
-- **操作系统**: Windows 7/8/10/11, macOS 10.12+, Linux
-- **内存**: 至少 512MB RAM
-- **磁盘空间**: 50MB 可用空间
-- **Python版本**: 3.7 或更高（仅限源码运行）
 
 ## 📖 使用指南
 
@@ -127,7 +128,7 @@ pip install pyinstaller
 ### 生成EXE文件
 ```bash
 # 简单打包
-pyinstaller -F -w -i icon.ico smart_extractor.py
+pyinstaller -F -w -i icon.ico recurUnzip.py
 
 ## 🔍 技术细节
 
@@ -153,12 +154,6 @@ pyinstaller -F -w -i icon.ico smart_extractor.py
 - ✅ 重复文件：自动跳过已存在的文件
 
 ## ❓ 常见问题
-
-### Q: 程序无法启动？
-**A**: 
-1. 确保系统已安装 [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-2. 以管理员身份运行
-3. 检查杀毒软件是否误报
 
 ### Q: 拖拽功能不可用？
 **A**: 
