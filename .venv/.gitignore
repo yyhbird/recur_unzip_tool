@@ -1,0 +1,15 @@
+# PyCharm
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# OS
+.DS_Store
+Thumbs.db
